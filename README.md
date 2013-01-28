@@ -3,11 +3,16 @@
 ## 概要
 
 prefix.ccで公開されている[名前空間リスト](http://prefix.cc/popular/all.file.csv)を基に，名前空間URIと実際の語彙定義ファイルを関連付けたデータセットです．  
-output_auto.ntとoutput_manual.ntをRDFリポジトリに登録することで，名前空間URIから実際の語彙定義ファイルを取得するなどの用途に利用できます．
+以下の2つのファイルををRDFリポジトリに登録することで，名前空間URIから実際の語彙定義ファイルを取得するなどの用途に利用できます．
+
+  * **output_auto.nt**
+  * **output_manual.nt**
 
 ## データ構造
 
-スキーマを[簡易DSP](http://www.meta-proj.jp/A04.pdf)で記述しています．(simplified_dsp.txt)
+スキーマを以下のファイルに[簡易DSP](http://www.meta-proj.jp/A04.pdf)で記述しています．
+
+  * **simplified_dsp.txt**
 
 
 ## データ作成手順

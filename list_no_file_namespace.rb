@@ -9,6 +9,7 @@ require 'sparql/client'
 
 sparql =<<-EOF
 SELECT ?uri ?prefix
+FROM <http://purl.org/net/mdlab/vocab>
 WHERE {
   ?uri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
   ?uri <http://purl.org/vocab/vann/preferredNamespacePrefix> ?prefix .
@@ -16,7 +17,7 @@ WHERE {
 }
 EOF
 
-endpoint_uri = "http://parsley.slis.tsukuba.ac.jp:8080/openrdf-sesame/repositories/vocab"
+endpoint_uri = "http://mdlab.slis.tsukuba.ac.jp/sparql"
 
 endpoint = SPARQL::Client.new(endpoint_uri)
 results = endpoint.query(sparql)
